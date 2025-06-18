@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vireon Landing Page</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #1e1e1e;
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Hero Section */
+.hero {
+  width: 100%;
+  padding: 80px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #f5d742, #fff 50%, #1e1e1e 100%);
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.content h1 {
+  font-size: 3rem;
+  color: #1e1e1e;
+  margin-bottom: 20px;
+  animation: slideIn 0.8s ease-in-out;
+}
+
+.content p {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 12px 30px;
+  background-color: #1e1e1e;
+  color: #f5d742;
+  border: 2px solid #1e1e1e;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: #1e1e1e;
+  border-color: #1e1e1e;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes slideIn {
+  from { transform: translateY(30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+  </style>
+</head>
+<body>
+  <section class="hero">
+    <div class="content">
+      <h1>Welcome to Vireon</h1>
+      <p>Your Growth-Driven Social Media Marketing Agency</p>
+      <a href="#contact" class="btn">Get Started</a>
+    </div>
+  </section>
+</body>
+</html>
